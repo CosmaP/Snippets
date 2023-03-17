@@ -1,0 +1,13 @@
+
+Exception has occurred: AttributeError
+'User' object has no attribute 'users'
+  File "C:\Documents\!-Synced\OneDrive\!-DevProjects\Sharepoint-ExtractData\office365_api.py", line 132, in get_file_properties_from_folder_for_netdocs_import
+    author_url = f'https://graph.microsoft.com/v1.0/users/{file.author.users.id}'
+                                                           ^^^^^^^^^^^^^^^^^
+  File "C:\Documents\!-Synced\OneDrive\!-DevProjects\Sharepoint-ExtractData\file_properties_from_folder_for_netdocs_import.py", line 11, in get_properties_by_folder
+    files_properties = SharePoint().get_file_properties_from_folder_for_netdocs_import(folder)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Documents\!-Synced\OneDrive\!-DevProjects\Sharepoint-ExtractData\file_properties_from_folder_for_netdocs_import.py", line 17, in <module>
+    get_properties_by_folder(FOLDER_NAME)
+AttributeError: 'User' object has no attribute 'users'
+
